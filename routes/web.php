@@ -25,7 +25,7 @@ Route::get('/index', function () {
 
 
 Route::middleware(['auth:sanctum', 'verified'])->group(function() {
-    Route::get('/dashboard',[\App\Http\Controllers\TasksController::class, 'index'])->name('dashboard');
+    Route::get('/dashboard',[\App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');
 
 Route::get('/show', [ProjectsController::class, 'index']);
 
