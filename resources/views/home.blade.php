@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('content')
-    <div style="background-color: purple">
+    <div style="background-color: white">
         <header style="max-width:1500px;" class="w3-display-container w3-content w3-wide" id="home">
             <img class="w3-image" src="images/image1.jpg" alt="future" width="1500" height="500">
             <div class="w3-display-middle w3-margin-top w3-center">
