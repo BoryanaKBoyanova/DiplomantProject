@@ -34,8 +34,7 @@ Route::get('/create',[ProjectsController::class, 'add']);
 Route::post('/create',[ProjectsController::class, 'create']);
 
 Route::get('/edit/{edit}', [ProjectsController::class, 'edit']);
-Route::put('/edit/{edit}', [ProjectsController::class, 'update']);
-Route::post('/edit/{edit}', [ProjectsController::class, 'delete']);
+Route::post('/edit/{edit}', [ProjectsController::class, 'update']);
 
 Route::get('/search', [ProjectsController::class, 'search']);
 });
