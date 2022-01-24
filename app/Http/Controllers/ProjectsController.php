@@ -37,7 +37,6 @@ class ProjectsController extends Controller
         else {
             return dd($request->all());
         }
-
         $project->save();
 
        return redirect('/show');
@@ -75,7 +74,7 @@ class ProjectsController extends Controller
 
     public function search(Request $request){
         $search = $request->get('search');
-        $projects = Phone::where('topic', 'like','%'.$search.'%')
+        $projects = Project::where('topic', 'like','%'.$search.'%')
             ->orWhere('professor', 'like','%'.$search.'%')
             ->orWhere('description', 'like','%'.$search.'%')->get();
         return view('search', compact('projects'));

@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProjectsController;
-use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,15 +15,27 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
-//Route::get('/show', [HomeController::class, 'index']);
+Route::get('/index', function () {
+    return view('index');
+});
+
+
+
+Route::middleware(['auth:sanctum', 'verified'])->group(function() {
+    Route::get('/dashboard',[\App\Http\Controllers\TasksController::class, 'index'])->name('dashboard');
+
 Route::get('/show', [ProjectsController::class, 'index']);
 
 
 Route::get('/create',[ProjectsController::class, 'add']);
 Route::post('/create',[ProjectsController::class, 'create']);
+
+Route::get('/edit/{edit}', [ProjectsController::class, 'edit']);
+Route::put('/edit/{edit}', [ProjectsController::class, 'update']);
+Route::post('/edit/{edit}', [ProjectsController::class, 'delete']);
+
+Route::get('/search', [ProjectsController::class, 'search']);
+});
