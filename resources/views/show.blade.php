@@ -4,7 +4,7 @@
             Manage your projects
         </h2>
         <div class="flex-auto text-right mt-2">
-            <a href="/search" class="text-right bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Find your project</a>
+            <a href="/search" class="text-right bg-blue-500 hover:bg-blue-700 text-black font-bold py-2 px-4 rounded">Find your project</a>
         </div>
     </x-slot>
 
@@ -25,7 +25,7 @@
                     <tr class="border-b">
                         <th class="text-left p-3 px-5">Topic</th>
                         <th class="text-left p-3 px-5">Professor</th>
-                        <th class="text-left p-3 px-5">description</th>
+                        <th class="text-left p-3 px-5">Description</th>
                         <th class="text-left p-3 px-5">Photo</th>
                         <th class="text-left p-3 px-5">Actions</th>
                     </tr>
@@ -47,9 +47,9 @@
                             </td>
                             <td class="p-3 px-5">
 
-                                <a href="/edit/{{$project->id}}" name="edit" class="mr-3 text-sm bg-blue-500 hover:bg-blue-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline">Edit</a>
+                                <a href="/edit/{{$project->id}}" name="edit" class="mr-3 text-sm bg-blue-500 hover:bg-blue-700 text-black py-1 px-2 rounded focus:outline-none focus:shadow-outline">Edit</a>
                                 <form action="/edit/{{$project->id}}" class="inline-block">
-                                    <button type="submit" name="delete" formmethod="POST" class="text-sm bg-red-500 hover:bg-red-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline">Delete</button>
+                                    <button type="submit" name="delete" formmethod="POST" class="text-sm bg-red-500 hover:bg-red-700 text-black py-1 px-2 rounded focus:outline-none focus:shadow-outline">Delete</button>
                                     {{ csrf_field() }}
                                 </form>
                             </td>
