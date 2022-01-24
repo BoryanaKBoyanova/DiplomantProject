@@ -11,58 +11,6 @@
         <h3 style="color:black; font-family: Verdana;" class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
     </div>
     <!-- edit photos -->
-    <div class="w3-row-padding">
-        <div class="w3-col l3 m6 w3-margin-bottom">
-            <div class="w3-display-container">
-                <div class="w3-display-topleft w3-black w3-padding">iPhone6s</div>
-                <img src="images/iphone6s.jpg" alt="iphone7" style="width: 100%">
-            </div>
-        </div>
-        <div class="w3-col l3 m6 w3-margin-bottom">
-            <div class="w3-display-container">
-                <div class="w3-display-topleft w3-black w3-padding">iPhone7</div>
-                <img src="images/iphone7.jpg" alt="House" style="width:100%">
-            </div>
-        </div>
-        <div class="w3-col l3 m6 w3-margin-bottom">
-            <div class="w3-display-container">
-                <div class="w3-display-topleft w3-black w3-padding">iPhone8</div>
-                <img src="images/iphone8.jpg" alt="House" style="width:100%">
-            </div>
-        </div>
-        <div class="w3-col l3 m6 w3-margin-bottom">
-            <div class="w3-display-container">
-                <div class="w3-display-topleft w3-black w3-padding">iPhoneXS</div>
-                <img src="images/iphoneXS.jpg" alt="House" style="width:100%">
-            </div>
-        </div>
-    </div>
 
-    <div class="w3-row-padding">
-        <div class="w3-col l3 m6 w3-margin-bottom">
-            <div class="w3-display-container">
-                <div class="w3-display-topleft w3-black w3-padding">iPhone11</div>
-                <img src="/images/iphone11.jpg" alt="House" style="width:99%">
-            </div>
-        </div>
-        <div class="w3-col l3 m6 w3-margin-bottom">
-            <div class="w3-display-container">
-                <div class="w3-display-topleft w3-black w3-padding">iPhone11Pro</div>
-                <img src="/images/iphone11pro.jpg" alt="House" style="width:99%">
-            </div>
-        </div>
-        <div class="w3-col l3 m6 w3-margin-bottom">
-            <div class="w3-display-container">
-                <div class="w3-display-topleft w3-black w3-padding">iPhone12</div>
-                <img src="/images/iphone12.jpg" alt="House" style="width:99%">
-            </div>
-        </div>
-        <div class="w3-col l3 m6 w3-margin-bottom">
-            <div class="w3-display-container">
-                <div class="w3-display-topleft w3-black w3-padding">iPhone12Pro</div>
-                <img src="/images/iphone12pro.jpg" alt="House" style="width:99%">
-            </div>
-        </div>
-    </div>
 @endsection
 
